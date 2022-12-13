@@ -30,6 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Run W3c Validator
+        uses: bucherfa/w3c-validator-action@v0.2
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
